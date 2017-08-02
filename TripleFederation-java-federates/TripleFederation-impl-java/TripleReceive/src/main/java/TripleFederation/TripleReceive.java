@@ -38,7 +38,7 @@ public class TripleReceive extends TripleReceiveBase {
             else if (interaction instanceof Int3) {
                 handleInteractionClass((Int3) interaction);
             }
-            log.info("Interaction received and handled: " + s);
+            log.info(String.format("recd: %f %s", currentTime, interaction.toString()));
         }
  
         ObjectReflector reflector = null;
@@ -54,8 +54,8 @@ public class TripleReceive extends TripleReceiveBase {
             else if (object instanceof Obj2) {
                 handleObjectClass((Obj2) object);
             }
-            log.info("Object received and handled: " + s);
-        }
+            log.info(String.format("recd: %f %s", currentTime, object.toString()));
+         }
     }
 
     private void execute() throws Exception {
@@ -124,42 +124,36 @@ public class TripleReceive extends TripleReceiveBase {
         //////////////////////////////////////////////////////////////////////////
         // TODO implement how to handle reception of the interaction            //
         //////////////////////////////////////////////////////////////////////////
-    	log.info(interaction);
-    }
+     }
 
     private void handleInteractionClass(Int2 interaction) {
         //////////////////////////////////////////////////////////////////////////
         // TODO implement how to handle reception of the interaction            //
         //////////////////////////////////////////////////////////////////////////
-    	log.info(interaction);
     }
 
     private void handleInteractionClass(Int3 interaction) {
         //////////////////////////////////////////////////////////////////////////
         // TODO implement how to handle reception of the interaction            //
         //////////////////////////////////////////////////////////////////////////
-    	log.info(interaction);
     }
 
     private void handleObjectClass(Obj1 object) {
         //////////////////////////////////////////////////////////////////////////
         // TODO implement how to handle reception of the object                 //
         //////////////////////////////////////////////////////////////////////////
-    	log.info(object);
     }
 
     private void handleObjectClass(Obj3 object) {
         //////////////////////////////////////////////////////////////////////////
         // TODO implement how to handle reception of the object                 //
         //////////////////////////////////////////////////////////////////////////
-    	log.info(object);
     }
 
     private void handleObjectClass(Obj2 object) {
         //////////////////////////////////////////////////////////////////////////
         // TODO implement how to handle reception of the object                 //
         //////////////////////////////////////////////////////////////////////////
-    	log.info(object);
     }
 
     public static void main(String[] args) {

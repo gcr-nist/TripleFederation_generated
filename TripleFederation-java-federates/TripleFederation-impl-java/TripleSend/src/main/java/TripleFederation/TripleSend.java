@@ -90,18 +90,21 @@ public class TripleSend extends TripleSendBase {
                 vInt3.set_intVal(789);
                 vInt3.set_strVal("GHI");
                 vInt3.sendInteraction(getLRC(), currentTime);
+                log.info(String.format("sent: %f %s", currentTime, vInt3.toString()));
             
                 Int1 vInt1 = create_Int1();
                 vInt1.set_boolVal(true);
                 vInt1.set_intVal(123);
                 vInt1.set_strVal("ABC");
                 vInt1.sendInteraction(getLRC(), currentTime);
-            
+                log.info(String.format("sent: %f %s", currentTime, vInt1.toString()));
+           
                 Int2 vInt2 = create_Int2();
                 vInt2.set_boolVal(true);
                 vInt2.set_intVal(456);
                 vInt2.set_strVal("DEF");
                 vInt2.sendInteraction(getLRC(), currentTime);
+                log.info(String.format("sent: %f %s", currentTime, vInt2.toString()));
             //
             ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -112,16 +115,20 @@ public class TripleSend extends TripleSendBase {
                 vObj3.set_Obj3Attr2(789);
                 vObj3.set_Obj3Attr3("GHI");
                 vObj3.updateAttributeValues(getLRC(), currentTime);
+                log.info(String.format("sent: %f %s", currentTime, vObj3.toString()));
             
                 vObj1.set_Obj1Attr1(true);
                 vObj1.set_Obj1Attr2(123);
                 vObj1.set_Obj1Attr3("ABC");
                 vObj1.updateAttributeValues(getLRC(), currentTime);
-            
+                log.info(String.format("sent: %f %s", currentTime, vObj1.toString()));
+                
                 vObj2.set_Obj2Attr1(true);
                 vObj2.set_Obj2Attr2(456);
                 vObj2.set_Obj2Attr3("DEF");
                 vObj2.updateAttributeValues(getLRC(), currentTime);
+                log.info(String.format("sent: %f %s", currentTime, vObj2.toString()));
+                
             //
             //////////////////////////////////////////////////////////////////////////////////////////
 
