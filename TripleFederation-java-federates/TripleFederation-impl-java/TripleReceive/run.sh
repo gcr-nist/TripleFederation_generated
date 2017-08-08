@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+printf "\ec"
 RTI_FILE="$DIR/RTI.rid"
 LOG4J="log4j.configurationFile=conf/log4j2.xml"
 IPV4="java.net.preferIPv4Stack=true"
