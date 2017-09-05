@@ -38,7 +38,7 @@ public class TripleReceive extends TripleReceiveBase {
             else if (interaction instanceof Int3) {
                 handleInteractionClass((Int3) interaction);
             }
-            log.info(String.format("recd: %f %s", currentTime, interaction.toString()));
+            log.info("Interaction received and handled: " + s);
         }
  
         ObjectReflector reflector = null;
@@ -54,8 +54,8 @@ public class TripleReceive extends TripleReceiveBase {
             else if (object instanceof Obj2) {
                 handleObjectClass((Obj2) object);
             }
-            log.info(String.format("recd: %f %s", currentTime, object.toString()));
-         }
+            log.info("Object received and handled: " + s);
+        }
     }
 
     private void execute() throws Exception {
@@ -124,7 +124,7 @@ public class TripleReceive extends TripleReceiveBase {
         //////////////////////////////////////////////////////////////////////////
         // TODO implement how to handle reception of the interaction            //
         //////////////////////////////////////////////////////////////////////////
-     }
+    }
 
     private void handleInteractionClass(Int2 interaction) {
         //////////////////////////////////////////////////////////////////////////

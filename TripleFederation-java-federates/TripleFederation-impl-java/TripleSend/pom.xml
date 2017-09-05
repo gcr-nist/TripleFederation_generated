@@ -118,9 +118,6 @@
                                 <copy todir="${basedir}/target" overwrite="true">
                                     <fileset file="${basedir}/RTI.rid" />
                                 </copy>
-                                <copy todir="${basedir}/target" overwrite="true">
-                                    <fileset file="${basedir}/run*" />
-                                </copy>
                             </tasks>
                         </configuration>
                     </execution>
